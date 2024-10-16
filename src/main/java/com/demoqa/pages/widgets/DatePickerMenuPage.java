@@ -15,7 +15,8 @@ public class DatePickerMenuPage extends WidgetsPage {
 
     private By dayValue(String day) {
         return By.
-                xpath("//div[contains(@class, 'react-datepicker__day react-datepicker__day--')][text()='" + day + "']");
+                xpath("//div[contains(@class, 'react-datepicker__day react-datepicker__day--')][text()='"
+                        + day + "']");
     }
 
     public void clickDay(String day) {
