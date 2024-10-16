@@ -29,10 +29,9 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() {
-        String url = "https://www.saucedemo.com";
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(url);
+        driver.get("https://www.saucedemo.com");
         basePage = new BasePage();
         basePage.setDriver(driver);
         setUtilityDriver();

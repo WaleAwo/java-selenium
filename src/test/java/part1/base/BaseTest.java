@@ -24,10 +24,9 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() {
-        String url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(url);
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         basePage = new BasePage();
         basePage.setDriver(driver);
         setUtilityDriver();

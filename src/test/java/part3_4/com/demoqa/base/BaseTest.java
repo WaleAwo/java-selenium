@@ -30,8 +30,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void loadApplication() {
-        String url = "https://demoqa.com/";
-        driver.get(url);
+        driver.get("https://demoqa.com/");
         basePage = new BasePage();
         basePage.setDriver(driver);
         setUtilityDriver();
