@@ -15,7 +15,7 @@ public class WebTablesPage extends ElementsPage {
     }
 
     public void setAge(String age) {
-        set(ageField, age);
+        setText(ageField, age);
     }
 
     public void clickSubmitButton() {

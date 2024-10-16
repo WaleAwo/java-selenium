@@ -14,11 +14,11 @@ public class LoginPage extends BasePage {
 
     public void setUsernameField(String username) {
         fluentWaitUntilVisible(2, usernameField);
-        set(usernameField, username);
+        setText(usernameField, username);
     }
 
     public void setPasswordField(String password) {
-        set(passwordField, password);
+        setText(passwordField, password);
     }
 
     public void clickLoginButton() {
