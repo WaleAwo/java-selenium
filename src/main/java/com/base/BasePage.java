@@ -2,12 +2,18 @@ package com.base;
 
 import org.openqa.selenium.*;
 
+import java.util.List;
+
 public class BasePage {
 
     public static WebDriver driver;
 
     public void setDriver(WebDriver driver) {
         BasePage.driver = driver;
+    }
+
+    protected List<WebElement> findElements(By locator) {
+        return driver.findElements(locator);
     }
 
     protected WebElement find(By locator) {
